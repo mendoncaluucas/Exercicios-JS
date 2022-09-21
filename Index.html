@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+
+
+</head>
+
+<!--<body>
+    <p>Sua idade é:</p>
+    <script type="text/javascript">
+        const texto = document.querySelector('p');
+        var idade = prompt("Informe a sua idade!");
+
+
+        var meses = (idade * 12);
+        var dias = (meses * 30);
+        var horas = (dias * 24);
+        document.writeln("<br> Vc tem " + horas + " horas de vida ");
+        document.writeln("<br> Vc tem " + dias + " dias de vida ");
+        document.writeln("<br> Vc tem " + meses + " meses de vida ");
+    </script>
+-->
+
+<p>O numero de chocolates que vc comprou eh: 0</p>
+<script type="text/javascript">
+
+    var chocolate = prompt("Informe o número de chocolates comprados!");
+    const texto = document.querySelector('p');
+    texto.addEventListener("click", atulizarNum());
+    function atulizarNum() {
+        var numero = prompt('insira um novo número de chocolates!');
+        texto.textContent = "O numero de chcolates que vc comprou eh: " + numero;
+    }
+
+</script>
+
+
+
+
+
+
+
+</body>
+
+</html>
