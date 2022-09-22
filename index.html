@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+
+
+</head>
+<!--
+<body>
+    <p>Sua idade é:</p>
+    <script type="text/javascript">
+        const texto = document.querySelector('p');
+        var idade = prompt("Informe a sua idade!");
+
+
+        var meses = (idade * 12);
+        var dias = (meses * 30);
+        var horas = (dias * 24);
+        document.writeln("<br> Vc tem " + horas + " horas de vida ");
+        document.writeln("<br> Vc tem " + dias + " dias de vida ");
+        document.writeln("<br> Vc tem " + meses + " meses de vida ");
+    </script>
+
+
+-->
+<!--<script type="text/javascript">
+
+   var choco = prompt("Quantos chocolates vc levara para a escola ");
+   var colegas = prompt("Quantos colegas tem na sala? ");
+   document.writeln(choco+"<br>");
+   document.writeln(colegas);
+   colegas=eval(colegas);
+   choco = eval(choco);
+    var resto = choco % colegas;
+    var falta = colegas -resto;
+    document.writeln("<br> vc precisa comprar "+falta+" chocolates para ter um numero exato");
+    resto = (choco + falta)/colegas;
+    alert(resto);
+    document.writeln("<br> Cada colega receberá "+resto+ " chocolates ");
+
+    
+</script>
+-->
+
+<!--<script type="text/javascript">
+    var idade;
+    alert('O programa a seguir vai mostrar se vc nasceu antes de 2000 ou não!');
+    idade = prompt("Qual a sua idade?");
+    if(idade<23){
+        document.writeln("Você tem "+idade+" então nasceu depois de 2000!");
+    }
+    else{
+        document.writeln("Você tem "+idade+" então nasceu antes de 2000")
+    }
+
+
+
+</script>
+-->
+<!--
+<script type="text/javascript">
+ var dataNasc;
+ var nome;
+ var calculoIdade;
+
+dataNasc = prompt("Qual o ano em que você nasceu?");
+calculoIdade = 2022-dataNasc;
+alert("Você tem "+calculoIdade+" anos de idade! ");
+
+nome = prompt("Qual o seu nome?");
+
+if((calculoIdade>=18 && calculoIdade<=40) && (nome==Paulo || nome==Mara)){
+        alert('Você é a pessoa certa!')
+    }
+    
+    else{
+        alert("Muito obrigado!");
+    }
+
+
+</script>
+-->
+<!--
+<form>
+    <input type="text" value="Qual o seu nome?">
+<input type="button" value="Clique aqui!" onclick="msg()">
+<script>
+function msg(){
+    alert("Boas vindas ao meu programa");
+}
+
+</script>
+
+
+
+</form>
+-->
+<!--
+<script>
+alert("O programa a seguir vai calcular o seu IMC!");
+
+var peso;
+var altura;
+var IMC;
+
+peso = prompt("Qual o seu peso?");
+altura = prompt("Qual a sua altura?");
+
+document.writeln("O seu peso eh: "+peso);
+document.writeln("<br> A sua altura eh "+altura);
+
+function imc(){
+    IMC = peso/(altura*altura);
+    alert("O seu IMC é igual a "+IMC);
+    if(IMC<18.5){
+    document.writeln("Você está abaixo do peso!");
+}
+if(IMC>=18.5 && IMC<=24.9){
+    document.writeln("Você está com um peso saudavel!");
+} 
+if(IMC>=25 && IMC<29.9){
+    document.writeln("Você está com sobrepeso!");
+}
+if(IMC>=30 && IMC<=39.9){
+    document.writeln("Você está obeso!");
+}
+if(IMC>40){
+    document.writeln("Você devia procurar um médico!");
+}
+}
+
+</script>
+<br><input type="button" value="Clique aqui para saber o seu IMC!" onclick="imc()">
+-->
+
+<!--
+<script>
+    alert("O programa a seguir serve para calcular o preço do seu consumo de água!");   
+    var preco;
+    var consumoAgua;
+    var calculo;
+    var desconto1;
+
+    consumoAgua = prompt("Qual o seu consumo de água em /m3?");
+
+    function valor(){
+        calculo = consumoAgua*preco;
+
+
+        if(consumoAgua<=20){
+            alert('O valor ficará R$1.60/m3');
+            preco =1.60;
+        }
+        if(consumoAgua>=21 && consumoAgua<=50){
+            alert("O valor ficará R$2.80/m3");
+            preco = 2.80;
+        }
+        if(consumoAgua>50){
+            alert("O valor ficará R$4.20/m3");
+            preco = 4.20;
+        }
+
+        if(calculo<100){
+            document.writeln("O valor da sua conta de água com 5% de desconto é "+desconto);
+            descontoo = calculo*0.05;
+        }
+        if(calculo>200){
+            document.writeln("O valor da sua conta de água com 10% de desconto é "+desconto);
+            descontoo = calculo*0.10;
+        }
+    }
+    
+    
+
+    
+</script>
+<input type="button" value="Clique aqui para saber o valor da sua conta de água!" onclick="valor()">
+-->
+
+
+<!--
+<input type="button" value="Clique aqui para saber se esse número é impar ou par!" onclick="par()">
+<script>
+    var num;
+
+    num = prompt("Informe um número!");
+
+    function par(){
+
+
+        if(num%2 == 0){
+           alert("O numero é par!");
+        }else{
+           alert("O número é impar!");
+
+        }
+
+    }
+
+
+</script>
+-->
+
+<!--Faça um programa que receba números até que seja digitado 0. -->
+<!--
+<script>
+var num;
+
+
+ 
+
+while(num!=0){
+    num = prompt("Insira um número!");
+}
+alert("o programa está encerrado");
+
+
+
+
+
+</script>
+-->
+<!--Faça um programa que leia 10 números e diga se o número lido é par ou impar -->
+<!--
+<script>
+var num;
+for(i=1;i!=10;i++){
+    num = prompt("Insira um número! " +par());
+}
+
+function par(){
+
+    if(num%2 == 0){
+        alert("O número é par!");
+    }else{
+        alert("O número é impar!")
+    }
+
+}
+alert("o programa está encerrado!");
+
+
+
+</script>
+-->
+<!--Faça um programa que solicite um número e a seguir mostre-o de forma decrescente até 0. -->
+<!---
+<script>
+var num;
+num = prompt("Insira um número!");
+for(i=num;i>=0;i--){
+    
+    document.write(" <br>"+i);
+}
+</script>
+-->
+
+<!--Faça um programa que calcule a media final de um(a) aluno(a) considerando que ele(a) deve informar 3 notas. As duas primeiras notas (n1 e n2) equivalem a 30% da nota final e a terceira nota (n3) equivale a 40% da nota final. 
+
+Se a média final for superior ou igual a 70 mostre uma mensagem parabenizando-o(a). 
+
+Se a média final for entre 50 e 69, mostre uma mensagem dizendo q ele(a) está em exame. 
+
+Se nenhuma das condições anteriores forem satisfeitas, ou seja, ele(a) tem nota inferior a 50, 	mostre mensagem dizendo que ele(a) reprovou na matéria. 
+
+Não esqueça de pedir o nome do(a) aluno(a) para nomeá-lo(a). -->
+
+
+<!--
+<script type="text/javascript">
+var media = 1;
+var n1,n2,n3;
+var nome;
+var total;
+
+nome = prompt("Qual o seu nome?");
+
+n1 = prompt("Qual a primeira nota?");
+n1 = eval(n1);
+n2 = prompt("Qual a segunda nota?");
+n2 = eval(n2);
+n3 = prompt("Qual a terceira nota?");
+n3 = eval(n3);
+   
+total = n1+n2+n3;
+media = total/3;
+
+document.write("<br>A sua primeira nota eh: "+n1+"<br> A sua segunda nota eh "+n2+"<br> A sua terceira nota eh "+n3);
+
+function nota(){
+   document.write("A sua média é "+ media.toFixed(2));
+}
+if(media>=70){
+    alert("Parabens "+nome+" vc foi aprovado com nota maxima!");
+}if(media>=50 && media<=69){
+    alert("É uma pena "+nome+" mas vc está em exame!");
+}if(media<50){
+    alert("Porra "+nome+" Você está reprovado!");
+}
+
+</script>
+<br><input type="button" value="Clique aqui para saber a sua média!" onclick="nota()">
+-->
+<!-- 
+
+Faça um programa que peça a nota e o nome de 5 alunos e mostre no final quem tem a maior nota entre eles. -->
+
+<script>
+    var nome1,nome2,nome3,nome4,nome5;
+    var n1,n2,n3,n4,n5;
+
+
+    nome1 = prompt("Qual o seu nome?");
+    n1 = prompt("Qual a sua nota?");
+    nome2 = prompt("Qual o seu nome?");
+    n2 = prompt("Qual a sua nota?");
+    
+    nome3= prompt("Qual o seu nome?");
+    n3 = prompt("Qual é a sua nota?");
+    nome4 = prompt("Qual é a sua nota?");
+    n4 = prompt("Qual é a sua nota");
+    nome5 = prompt("Qual é o seu nome?");
+    n5 = prompt("Qual é a sua nota?");
+
+
+
+</script>
+
+
+</body>
+
+</html>
